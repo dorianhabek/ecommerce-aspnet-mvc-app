@@ -7,11 +7,17 @@ namespace Prodaja_Ulaznica.Models
     {
         [Key]
         public int ProducerId { get; set; }
+
+        [Display(Name = "Profile picture")]
         public string ProfilePictureURL { get; set; }
+
+        [Display(Name = "Full Name")]
         public string FullName { get; set; }
+
+        [Display(Name = "Bio")]
         public string Bio { get; set; }
 
-        public List<Movie> Movies { get; set; }
+        public List<Producer> Producers { get; set; }
 
 
         
